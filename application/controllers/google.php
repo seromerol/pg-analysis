@@ -9,7 +9,8 @@ public function __construct() {
 /** * Welcome index * * @access     public */ 
 
 public function index() { 
-$provider = new third_party/src/Provider/google([
+$provider = new League\OAuth2\Client\Provider\Google([
+//$provider = new third_party/src/Provider/Google([
     'clientId'      => '118760729273-v7r5c3l0t0f1kk49crl7cjabnmr5agdj.apps.googleusercontent.com',
     'clientSecret'  => 'Ubh3NkNq27BKuyTGx-IKNdZ_',
     'redirectUri'   => 'https://grado.gnu-media.org/oauth2callback',
@@ -54,7 +55,7 @@ if (!isset($_GET['code'])) {
     }
 
     // Use this to interact with an API on the users behalf
-    //echo $token->accessToken;
+    echo $token->accessToken;
 
     // Use this to get a new access token if the old one expires
     //echo $token->refreshToken;
