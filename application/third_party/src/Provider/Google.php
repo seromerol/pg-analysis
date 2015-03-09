@@ -17,7 +17,7 @@ class Google extends AbstractProvider
      * @var string If set, this will be sent to google as the "hd" parameter.
      * @link https://developers.google.com/accounts/docs/OAuth2Login#hd-param
      */
-    public $hostedDomain = '';
+    public $hostedDomain = 'utadeo.edu.co';
 
     public function setHostedDomain($hd)
     {
