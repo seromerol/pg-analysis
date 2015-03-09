@@ -9,6 +9,10 @@ public function __construct() {
 /** * Welcome index * * @access     public */ 
 
 public function index() { 
+
+include(APPPATH.'third_party/src/Provider/IdentityProvider.php');
+include(APPPATH.'third_party/src/Provider/Google.php');
+
 $provider = new League\OAuth2\Client\Provider\Google([
 //$provider = new third_party/src/Provider/Google([
     'clientId'      => '118760729273-v7r5c3l0t0f1kk49crl7cjabnmr5agdj.apps.googleusercontent.com',
