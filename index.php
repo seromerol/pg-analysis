@@ -28,7 +28,6 @@
  * By default development will show errors but testing and live will hide them.
  */
  
- include_once './vendor/autoload.php';
 
 if (defined('ENVIRONMENT'))
 {
@@ -202,6 +201,9 @@ if (defined('ENVIRONMENT'))
  *
  */
 require_once BASEPATH.'core/CodeIgniter.php';
+
+include_once './vendor/autoload.php';
+
 
 /* End of file index.php */
 /* Location: ./index.php */
